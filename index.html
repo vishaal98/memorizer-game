@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Simon</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#modal" data-toggle="modal">How to play?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about" data-toggle="modal">About</a>
+        </li>
+
+
+
+      </ul>
+
+    </div>
+  </nav>
+
+
+
+
+
+  <h1 id="level-title">Tap START to begin</h1>
+  <div class="container-xs">
+    <div class="row-col-6">
+      <div type="button" id="green" class="button green"></div>
+
+      <div type="button" id="red" class="button red"></div>
+    </div>
+
+    <div class="row-col-6">
+      <div type="button" id="yellow" class="button yellow"></div>
+      <div type="button" id="blue" class="button blue"></div>
+    </div>
+  </div>
+  <h3 id="level-title">START</h3>
+  <!-- <button class="btn btn-secondary js-scroll-trigger" href="#modal" data-toggle="modal">How to play?</button> -->
+
+  <div id="modal" class="modal fade">
+    <div class="modal-dialog modal-login">
+      <div class="modal-content">
+        <h1>HOW to PLAY</h1>
+        <h4>How good is your memory? test with this game</h4>
+        <ul class="list">
+          <li>Watch out the background colour and remember it</li>
+          <li>Then select and tap the same colored button</li>
+          <li>When the next backgroundd color appears, you need to tap the previous color along with the new one </li>
+          <li>Keep on going as long as you can.</li>
+          <li>Further the level you reach better is your memory.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="modal fade">
+    <div class="modal-dialog modal-login">
+      <div class="modal-content">
+        <h1>Memorizer</h1>
+        <h3>Created by Vishaal</h3>
+        <h5>Inspired By Simon's Game</h5>
+      </div>
+    </div>
+  </div>
+
+  <script src="bootstrap/js/jquery.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="game.js"></script>
+</body>
+
+</html>
